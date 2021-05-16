@@ -93,7 +93,7 @@ namespace PhotosLookBackCam
             if (e.Key == Key.D) {
                 Process.Start("explorer.exe", this.SourcePath.FullName);
             }
-            else if (e.Key == Key.Enter) {
+            else if (e.Key == Key.Enter || e.Key == Key.F) {
                 if (this.WindowState == WindowState.Normal) {
                     this.WindowState = WindowState.Maximized;
                     this.WindowStyle = WindowStyle.None;
@@ -102,6 +102,9 @@ namespace PhotosLookBackCam
                     this.WindowState = WindowState.Normal;
                     this.WindowStyle = WindowStyle.SingleBorderWindow;
                 }
+            }
+            else if (e.Key == Key.Escape) {
+                this.Close();
             }
         }
     }

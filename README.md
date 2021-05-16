@@ -27,4 +27,5 @@ Under :
 |Key|What id does|
 |---|:-----------|
 |D key|Open photos folder in explorer|
-|Enter key|Set fullscreen|
+|Enter or F|Set fullscreen|
+|Escape key|Quit software|
